@@ -25,13 +25,17 @@
 
 
 
-let num= Number(prompt("ingrese un numero"));
+// let num= Number(prompt("ingrese un numero"));
 
-for (let j = 1; j <= num; j++) {
-    for (let i = 1; i<=10; i++) {
-        console.log(`${j} X ${i} =${j*i}`);  
-    }
-}
+// for (let j = 1; j <= num; j++) {
+//     for (let i = 1; i<=10; i++) {
+//         console.log(`${j} X ${i} =${j*i}`);  
+//     }
+// }
+
+let costo = Number(prompt("Ingrese el costo del producto"));
+
+console.log("El valor a pagar es " + (costo - (costo*0.1)));
 
 
 
