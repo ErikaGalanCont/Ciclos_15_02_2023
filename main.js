@@ -33,10 +33,16 @@
 //     }
 // }
 
-let costo = Number(prompt("Ingrese el costo del producto"));
+// let costo = Number(prompt("Ingrese el costo del producto"));
 
-console.log("El valor a pagar es " + (costo - (costo*0.1)));
+// console.log("El valor a pagar es " + (costo - (costo*0.1)));
 
+let parciales = Number(prompt("Ingrese la calificacion de parciales"));
+let examenFinal = Number(prompt("Ingrese calificacion del examen final"));
+let trabajoFinal = Number(prompt("Ingrese calificion de trabajo final"));
 
+let notaFinal = parciales-(parciales*0.55) + examenFinal-(examenFinal*0.30) + trabajoFinal -(trabajoFinal*0.15);
+
+console.log("Su calificacion en la materia de algoritmos fue " + Math.floor(notaFinal));
 
 
